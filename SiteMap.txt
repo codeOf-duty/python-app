@@ -1,0 +1,23 @@
+URL Path :
+    /home 
+    /about
+    /admin
+    /admin/login
+    /admin/logout
+    
+Internal API :    
+    /upload
+    /uploadText
+    /addUserword
+    /searchWord
+
+Internal Auth API :  
+    /localwords
+    /removelocalwords
+    /reportGen
+    /bloomSetter
+    /symspellSetter
+
+API : 
+    /symspell
+    /blooms

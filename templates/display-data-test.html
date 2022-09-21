@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Spell check tool using NLP for Kannada</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" type="text/css" href= "./static/css/style.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"></link>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="../static/js/script.js"></script>
+</head>
+<body>
+<style>s
+
+.container {padding:20px;}
+.form-control {width:120px;}
+.popover {max-width:400px;}
+</style>
+	<a  id="{}" class="underline" data-toggle="popover"  data-html="true"   data-container="body"  data-placement="bottom" data-content='<button id="wtw" class="A2D">add to dictionary </button>' >Btn</a>
+<br/>
+<br/><br/><br/><br/><br/><br/>
+<div>
+	<button id="sjahf" class="A2D">add to dictionary </button>
+	<button id="jhe" class="A2D">add to dictionary </button>
+	<button id="wtw" class="A2D">add to dictionary </button>
+
+  <div id="popover-content" class="hide">
+      <form class="form-inline" role="form">
+        <div class="form-group"> 
+          <input class="headerSearch search-query" id="str" name="str" type="text" placeholder="Search..." />
+          <span class="glyphicon glyphicon-search" style="margin:3px 8px 0 -20px;"></span>
+          <input class="btn btn-primary btn-xs" id="phSearchButton" type="submit" value="Search" /> 
+          <input class="btn btn-primary btn-xs" id="searchButton" type="submit" value="Dictionary" />
+        </div>
+      </form>
+    </div>
+
+</div>
+
+<a data-placement="bottom" data-toggle="popover" data-container="body" data-placement="left" type="button" data-html="true" href="#" id="login"><span class="glyphicon glyphicon-search" style="margin:3px 0 0 0">dddd</span></a>
+
+<a  id="{}" class="underline"  data-toggle="popover" data-html="true"   data-container="body" data-placement="bottom" data-html="true" >{}</a>
+
+</body>
+</html>
+<script>
+$(".A2D").click(function() {
+    alert(this.id);
+});
+</script>

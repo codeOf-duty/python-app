@@ -1,0 +1,195 @@
+<!--
+<nav class="navbar navbar-expand-md navbar-light bg-inverse fixed-top" style="background-color: #fff;box-shadow: 3px 1px 20px 0px;" >
+	<a class="navbar-brand title" style="color: #000;font-size: medium;">
+		<img src="{{ url_for('static',filename='img/icon.png') }}" class="logo" /> ಕಾಗುಣಿತ ಪರಿಶೀಲನಾ ಸಾಧನ - ನಿರ್ವಾಹಕ
+	</a>
+	<button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-between" id="nav">
+		<ul class="navbar-nav">
+			<li class="nav-item" >
+				<a class="nav-link smaller  font-weight-bold px-3" href="{{ url_for('login') }}" style="color: #ef3d3d;">  HOME</a>
+			</li>
+			<li class="nav-item" >
+				<a class="nav-link smaller  font-weight-bold px-3" href="{{ url_for('about') }}" style="color: #ef3d3d;">  ABOUT</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+-->
+<div id="header1_div">
+<div class=" header1_div_container">  
+ <div class="row" style="width: 100%;margin: 0px;">
+   <div class="col-sm-6 col-xs-6 header1_col1">
+     <ul class="list-inline" id="ul_left" style="display: none;" >
+       <li class="hidden-sm hidden-xs"><a href="" target="_blank">LOGIN</a></li>  
+       <li class="lang"><a href="">English</a></li>  
+                  <li class="hidden-xs hidden-sm"><a href="https://karnataka.gov.in/" target="_blank" title="Opens in a new window">ಕರ್ನಾಟಕ ಸರ್ಕಾರದ ಅಧಿಕೃತ ಜಾಲತಾಣ </a></li>  
+ <li class="hidden-xs hidden-sm"><a href="https://covid19.karnataka.gov.in/" target="_blank" title="Opens in a new window"> ಕೊರೋನಾ ಬಗ್ಗೆ ಮಾಹಿತಿ  </a></li>  
+     </ul> 
+   </div>
+
+   <div class="col-sm-6 col-xs-6 header1_col2">
+     <ul class="list-inline" id="ul_right">
+        <li data-toggle="modal" data-target="#fmyModal9"><i class="fa fa-eye screenacess" aria-hidden="true"></i></li>
+        <li class="a_normal  btn btn-primary">
+          <a title="Normal View" class="A_white" href=""><span> A</span></a>
+        </li>
+        <li class="a_black  btn btn-primary" style="background-color: #000;">
+          <a onclick="Black()" title="For Visually Disabled click here" style="color: #fff810;" class="A_black" href=""><span> A </span></a>
+        </li>
+        <div class="textcontrols">
+            <button role="button" id="decreasetext">
+                <span>A-</span>
+            </button>
+            <button role="button" id="resettext">
+                <span>A</span>
+            </button>
+            <button role="button" id="increasetext">
+                <span>A+</span>
+            </button>
+        </div>
+        <li class="low_vision" title="Kannada Fonts Download" data-toggle="modal" data-target="#myModal_fonts" style="background-color: white;border: 1px solid #08367e;display: none;"><i class="fa fa-file-archive-o" id="vision_icon" aria-hidden="true"></i></li>
+     </ul> 
+   </div>
+
+  </div> 
+</div>  
+</div>  
+
+      <div class="modal " id="myModal_screen" role="dialog">
+        <div class="modal-dialog">
+        
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" style="color: white;">×</button>
+              <h4 class="modal-title">Screen Reader Access </h4>
+            </div>
+
+            <div class="modal-body" style="overflow-x: auto;">
+              <p>The website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova and Window-Eyes.</p>
+              <p>Following table lists the information about different screen readers:</p>
+
+              <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sl.No</th>
+                  <th>Screen Reader</th>
+                  <th>Website</th>
+                  <th>Free/ Commercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Non Visual Desktop Access (NVDA)</td>
+                  <td><a href="http://www.nvda-project.org/" target="_blank" title="Opens in a new window">http://www.nvda-project.org/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>JAWS</td>
+                  <td><a href="https://www.freedomscientific.com/products/software/jaws/" target="_blank" title="Opens in a new window">http://www.freedomscientific.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Window-Eyes</td>
+                  <td><a href="http://www.gwmicro.com/" target="_blank" title="Opens in a new window">http://www.gwmicro.com</a>(External website that opens in a new window)</td>
+                  <td>Commercial</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>System Access To Go</td>
+                  <td><a href="http://www.satogo.com/" target="_blank" title="Opens in a new window">http://www.satogo.com/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WebAnywhere</td>
+                  <td><a href="http://webinsight.cs.washington.edu/" target="_blank" title="Opens in a new window">http://webinsight.cs.washington.edu/</a>(External website that opens in a new window)</td>
+                  <td>Free</td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
+
+           
+          </div>
+          
+        </div>
+      </div>
+
+
+
+
+
+
+<div class="header2_div">
+  <div class=" header2_div_container">
+    <div class="row header2_div_row">
+   
+     <div class="col-md-4 col-lg-4 col-sm-8 col-xs-8">
+    <a href="https://cm.karnataka.gov.in/" target="_blank" title="Opens in a new window"><img class="ci-cm-photo hidden-sm hidden-xs" src="{{ url_for('static',filename='images/chief_minister_of_karrnataka_kn.png') }}"></a>
+   
+     </div>
+   
+       <div class="col-md-5 col-lg-5 col-sm-8 col-xs-8">
+
+
+         <a href="">
+        </a><div class="media mymedia " style="display: block;" ><a href="">
+      </a><div class="media-left logo-10"><a href="">
+		</a><a>
+                <img src="{{ url_for('static',filename='images/kar_main_logo.png') }}" class="gok_logo pull-left" style="height: 90px;" />
+		</a>  
+<!--
+        <div class="media mymedia ">
+        <div class="media-left logo-10">
+        <a>
+           <img src="{{ url_for('static',filename='images/kar_main_logo.png') }}" class="gok_logo pull-left" style="height: 90px;" />
+		</a>   -->
+       <div class="dept_name">
+       <h4 class="media-heading media_title"></h4>
+	   <a href="https://karnataka.gov.in/" target="_blank" title="Opens in a new window">
+        <p class="media_title_p" style="font-size: 25px;font-weight: 600;margin-top: 10px;" >ಕಾಗುಣಿತ ಪರಿಶೀಲನಾ ಸಾಧನ</p>
+		</a>
+      </div>
+      </div>
+      <div class="media-body mymedia1">
+
+      </div>
+    </div>
+    
+     </div>
+
+    
+     <div class="col-md-3 col-lg-3 col-sm-4 col-xs-4">
+        <div class="media">
+          <div class="media-body">
+            <a href="https://karnataka.gov.in/" target="_blank" title="Opens in a new window">
+              <img src="{{ url_for('static',filename='img/monograms_1_2.png') }}" class="dept_logo" />
+            </a>
+          </div>
+        </div>
+     </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="header1_div">
+<div class=" header1_div_container">  
+ <div class="row" style="width: 100%;margin: 0px;">
+   <div class="col-sm-12 col-xs-12 ">
+     <ul class="list-inline" id="ul_left">
+       <li class=""><a href="{{ url_for('home') }}" style="border: 0px solid #666;font-size: 22px;margin-top: 0px;" ><i class="fa fa-home"></i></a></li>  
+       <li class="">|</li>
+       <li class=""><a href="{{ url_for('about') }}" style="border: 0px solid #666;font-size: 14px;margin-top: 0px;" >About</a></li>   
+     </ul> 
+   </div>
+  </div> 
+</div>  
+</div>  
+
