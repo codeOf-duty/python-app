@@ -42,7 +42,7 @@ app.config['MYSQL_DB'] = 'spt'
 mysql = MySQL(app)
 
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('index.html')
 
