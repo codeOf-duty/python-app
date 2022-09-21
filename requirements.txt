@@ -9,3 +9,4 @@ mmh3
 pyxdameraulevenshtein
 mysqlclient
 flask-mysqldb
+gunicorn

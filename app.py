@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify, session
-from flask_mysqldb import MySQL
-import MySQLdb.cursors
+#from flask_mysqldb import MySQL
+#import MySQLdb.cursors
 import docx
 import re
 import snippets
