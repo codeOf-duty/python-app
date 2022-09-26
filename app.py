@@ -37,7 +37,7 @@ app.secret_key = os.urandom(24)
 app.config['MYSQL_HOST'] = 'sql6.freesqldatabase.com'
 app.config['MYSQL_USER'] = 'sql6521260'
 app.config['MYSQL_PASSWORD'] = '7wQv8H839F'
-app.config['MYSQL_DB'] = 'spt'
+app.config['MYSQL_DB'] = 'sql6521260'
 
 mysql = MySQL(app)
 
