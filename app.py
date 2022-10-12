@@ -34,10 +34,10 @@ if Path("datasets/docxDataset-freq/status.sts").is_file():
 app = Flask(__name__)
 
 app.secret_key = os.urandom(24)
-app.config['MYSQL_HOST'] = 'sql6.freesqldatabase.com'
-app.config['MYSQL_USER'] = 'sql6522326'
-app.config['MYSQL_PASSWORD'] = 'grqn8MjSFy'
-app.config['MYSQL_DB'] = 'sql6522326'
+app.config['MYSQL_HOST'] = '66.29.137.41'
+app.config['MYSQL_USER'] = 'kagahpxe_kagapa'
+app.config['MYSQL_PASSWORD'] = 'kagapaNUDI1997***'
+app.config['MYSQL_DB'] = 'kagahpxe_kagapa'
 
 mysql = MySQL(app)
 
